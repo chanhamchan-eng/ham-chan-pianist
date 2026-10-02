@@ -95,6 +95,127 @@ img{max-width:100%}
 }
 </style>
 
+
+<style id="about-mobile-v8-fix">
+@media(max-width:760px){
+  /* About hero: mobile is a deliberate vertical composition, not a compressed desktop layout */
+  .hero{
+    min-height:0!important;
+    padding:112px 22px 64px!important;
+    overflow:visible;
+  }
+  .hero .kicker{
+    display:block;
+    margin:88px 0 0;
+    font-size:10px;
+  }
+  .hero h1{
+    position:static!important;
+    margin:48px 0 22px!important;
+    font-size:clamp(88px,28vw,118px)!important;
+    line-height:.76!important;
+    letter-spacing:-.065em!important;
+  }
+  .hero .intro{
+    position:static!important;
+    width:min(100%,430px)!important;
+    margin:0 0 36px!important;
+    font-size:clamp(25px,7.4vw,32px)!important;
+    line-height:1.08!important;
+  }
+  .hero-photo{
+    position:static!important;
+    width:calc(100% - 34px)!important;
+    height:430px!important;
+    margin:0 0 0 auto!important;
+    overflow:hidden;
+  }
+  .hero-photo img{
+    width:100%!important;
+    height:100%!important;
+    max-height:none!important;
+    object-fit:cover!important;
+    object-position:center 25%!important;
+  }
+  .rule{margin:0 22px!important}
+
+  /* Biography */
+  .story{padding:70px 22px 86px!important}
+  .story-grid{display:block!important}
+  .side{
+    position:static!important;
+    margin:0 0 44px!important;
+    font-size:10px!important;
+    line-height:1.9!important;
+  }
+  .bio p{
+    font-family:"Instrument Serif",Georgia,serif!important;
+    font-size:21px!important;
+    line-height:1.5!important;
+    margin:0 0 40px!important;
+  }
+  .bio p:first-child{
+    font-size:30px!important;
+    line-height:1.27!important;
+    letter-spacing:-.015em!important;
+  }
+  .bio p:nth-child(3){
+    font-size:26px!important;
+    line-height:1.34!important;
+  }
+
+  /* Mid-page visual composition */
+  .break{
+    min-height:690px!important;
+  }
+  .break img{
+    left:22px!important;
+    top:54px!important;
+    width:76vw!important;
+    height:430px!important;
+    object-fit:cover!important;
+    object-position:center 25%!important;
+  }
+  .break-words{
+    left:22px!important;
+    right:auto!important;
+    top:455px!important;
+    width:calc(100% - 44px)!important;
+    font-size:clamp(60px,18vw,82px)!important;
+    line-height:.78!important;
+  }
+  .break-words i{margin-left:14vw!important}
+
+  /* Path and resources */
+  .path{padding:78px 22px 84px!important}
+  .path-top{display:block!important}
+  .path-top .label{display:block;margin-bottom:12px}
+  .path h2{
+    margin:46px 0 0!important;
+    font-size:clamp(52px,15vw,72px)!important;
+    line-height:.88!important;
+  }
+  .closing{padding:78px 22px!important}
+  .closing h2{
+    font-size:clamp(58px,17vw,78px)!important;
+    line-height:.86!important;
+  }
+  .resources{margin-top:52px!important}
+  #short-biography{padding:72px 22px!important}
+  #short-biography>div{display:block!important}
+  #short-biography>div>div:first-child{margin-bottom:28px}
+  #short-biography p{font-size:23px!important;line-height:1.48!important}
+  footer{padding:28px 22px!important}
+}
+@media(max-width:430px){
+  .hero{padding-left:18px!important;padding-right:18px!important}
+  .hero .kicker{margin-top:78px}
+  .hero-photo{height:400px!important}
+  .story{padding-left:18px!important;padding-right:18px!important}
+  .rule{margin-left:18px!important;margin-right:18px!important}
+}
+</style>
+
 </head>
 <body>
 <header><a class="identity" href="../index.html">Ham Chan / Pianist</a><button class="menu">Menu +</button></header>
