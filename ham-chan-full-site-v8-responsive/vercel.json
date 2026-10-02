@@ -1,0 +1,12 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/about", "destination": "/about/index.html" },
+    { "source": "/recordings", "destination": "/recordings/index.html" },
+    { "source": "/watch", "destination": "/watch/index.html" },
+    { "source": "/concerts", "destination": "/concerts/index.html" },
+    { "source": "/press", "destination": "/press/index.html" },
+    { "source": "/contact", "destination": "/contact/index.html" }
+  ]
+}
