@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About — Ham Chan, Pianist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f2eee5;--ink:#171714;--muted:#756f65;--line:rgba(23,23,20,.22)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;font-weight:300}a{color:inherit;text-decoration:none}a:hover{opacity:.55}
+header{position:absolute;z-index:10;top:0;left:0;right:0;padding:28px 4vw;display:flex;justify-content:space-between;align-items:center}.identity{font-size:10px;letter-spacing:.15em;text-transform:uppercase}.menu{border:0;background:none;font:500 11px "DM Sans";letter-spacing:.15em;text-transform:uppercase}
+.hero{position:relative;min-height:900px;padding:115px 6vw 60px;overflow:hidden}.kicker{font-size:10px;letter-spacing:.16em;text-transform:uppercase}h1{font:clamp(150px,23vw,350px)/.68 "Instrument Serif";font-weight:400;letter-spacing:-.07em;margin:55px 0 0;position:relative;z-index:3}h1 i{font-weight:400}.hero-photo{position:absolute;right:7vw;top:120px;width:min(37vw,535px);height:650px;overflow:hidden}.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 28%;display:block}.intro{position:absolute;left:8vw;bottom:55px;width:min(500px,40vw);font:clamp(25px,2.7vw,40px)/1.08 "Instrument Serif";z-index:4}
+.rule{height:1px;background:var(--line);margin:0 6vw}
+.story{position:relative;padding:10vw 6vw 12vw}.story-grid{display:grid;grid-template-columns:180px minmax(0,760px) 1fr;gap:5vw}.side{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);line-height:1.8;position:sticky;top:30px;height:max-content}.bio p{font-size:18px;line-height:1.72;margin:0 0 52px}.bio p:first-child{font:clamp(28px,3vw,42px)/1.25 "Instrument Serif";letter-spacing:-.015em}.bio p:nth-child(3){font:clamp(25px,2.6vw,37px)/1.3 "Instrument Serif"}.marginal{padding-top:380px;color:var(--muted);font-size:11px;letter-spacing:.08em;line-height:1.8;text-transform:uppercase}.marginal div{border-top:1px solid var(--line);padding-top:12px;margin-bottom:110px}
+.break{position:relative;min-height:850px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}.break img{position:absolute;left:7vw;top:85px;width:min(43vw,610px);height:680px;object-fit:cover;object-position:center 25%}.break-words{position:absolute;right:5vw;top:145px;width:51vw;font:clamp(75px,10vw,150px)/.78 "Instrument Serif";letter-spacing:-.055em}.break-words i{display:block;margin-left:9vw}.break-note{position:absolute;right:7vw;bottom:70px;width:330px;font-size:12px;line-height:1.6;color:var(--muted)}
+.path{padding:10vw 6vw 12vw}.path-top{display:flex;justify-content:space-between;align-items:start}.path .label{font-size:10px;letter-spacing:.15em;text-transform:uppercase}.path h2{font:clamp(70px,10vw,145px)/.8 "Instrument Serif";font-weight:400;letter-spacing:-.05em;margin:50px 0 80px}.closing{padding:9vw 6vw;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:10vw;align-items:end}.closing h2{font:clamp(65px,8vw,120px)/.83 "Instrument Serif";font-weight:400;letter-spacing:-.05em;margin:0}.resources{display:flex;flex-direction:column;gap:18px}.resources a{font-size:11px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--line);padding:0 0 14px}
+footer{padding:35px 6vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:9px;letter-spacing:.14em;text-transform:uppercase}
+@media(max-width:800px){header{padding:24px}.hero{min-height:780px;padding:105px 24px 45px}h1{font-size:35vw}.hero-photo{right:0;top:260px;width:72vw;height:460px}.intro{left:24px;bottom:35px;width:70vw}.rule{margin:0 24px}.story{padding:90px 24px}.story-grid{display:block}.side{position:static;margin-bottom:55px}.marginal{display:none}.bio p{font-size:16px}.break{min-height:760px}.break img{left:24px;top:70px;width:72vw;height:510px}.break-words{right:20px;top:480px;width:86vw}.break-note{display:none}.path{padding:90px 24px}.closing{padding:90px 24px;display:block}.resources{margin-top:70px}footer{padding:28px 24px;gap:25px;flex-wrap:wrap}}
+</style>
+
+<style id="site-nav-style">
+.site-menu-overlay{position:fixed;inset:0;background:#171714;color:#f2eee5;z-index:9999;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s ease;padding:34px 5vw 38px;display:flex;flex-direction:column}
+.site-menu-overlay.open{opacity:1;visibility:visible}
+.site-menu-top{display:flex;justify-content:space-between;align-items:center}
+.site-menu-close{border:0;background:transparent;color:inherit;font:400 10px "DM Sans",sans-serif;letter-spacing:.18em;text-transform:uppercase;cursor:pointer}
+.site-menu-links{margin:auto 0;display:flex;flex-direction:column;align-items:flex-start}
+.site-menu-links a{font:400 clamp(48px,7vw,108px)/.82 "Instrument Serif",Georgia,serif;letter-spacing:-.045em;color:inherit;text-decoration:none}
+.site-menu-links a:hover{font-style:italic;opacity:1}
+.site-menu-bottom{display:flex;justify-content:space-between;gap:25px;align-items:end;font:400 9px "DM Sans",sans-serif;letter-spacing:.16em;text-transform:uppercase}
+.site-menu-bottom a{color:inherit}
+@media(max-width:760px){.site-menu-overlay{padding:28px 24px}.site-menu-links a{font-size:16vw}.site-menu-bottom{flex-wrap:wrap}}
+</style>
+
+
+<style id="responsive-balance-v7">
+/* Responsive balance pass — content/design baseline remains V6 */
+html{scroll-behavior:smooth}
+img{max-width:100%}
+
+/* Large desktop: prevent compositions from becoming excessively stretched */
+@media (min-width:1440px){
+  main>section, footer, header{max-width:1800px;margin-left:auto;margin-right:auto}
+}
+
+/* Tablet / compact desktop */
+@media (max-width:1100px){
+  section{padding-left:5vw!important;padding-right:5vw!important}
+  header{padding-left:5vw!important;padding-right:5vw!important}
+  .hero{min-height:88vh}
+  .hero h1{font-size:clamp(92px,15vw,180px)!important}
+  .recording-grid,.about-grid,.project-grid,.press-grid{gap:5vw!important}
+  .site-menu-links a{font-size:clamp(54px,9vw,90px)}
+}
+
+/* Mobile */
+@media (max-width:760px){
+  body{overflow-x:hidden}
+  header{padding:22px 22px!important}
+  section{padding-left:22px!important;padding-right:22px!important}
+  .hero{min-height:auto!important;padding-top:110px!important;padding-bottom:72px!important}
+  .hero h1{font-size:clamp(72px,23vw,118px)!important;line-height:.78!important}
+  .hero .portrait, .hero img{max-height:64vh}
+  h2{overflow-wrap:normal}
+  p{max-width:100%}
+  .site-menu-overlay{padding:24px 22px 28px}
+  .site-menu-links{gap:2px}
+  .site-menu-links a{font-size:15.5vw;line-height:.88}
+  .site-menu-bottom{font-size:8px;line-height:1.5}
+  .footer-row{gap:24px!important;align-items:flex-start!important}
+}
+
+/* Small phones */
+@media (max-width:430px){
+  header{padding:19px 18px!important}
+  section{padding-left:18px!important;padding-right:18px!important}
+  .hero{padding-top:96px!important}
+  .site-menu-overlay{padding-left:18px;padding-right:18px}
+  .site-menu-links a{font-size:16vw}
+}
+
+/* Touch targets */
+@media (pointer:coarse){
+  a,button{min-height:40px}
+  .site-menu-links a{min-height:0}
+}
+</style>
+
+
+<style id="about-responsive-v7">
+@media(max-width:760px){
+  .about-grid,.bio-grid{grid-template-columns:1fr!important;gap:36px!important}
+  .resources{display:flex!important;flex-wrap:wrap;gap:16px 22px!important}
+  #short-biography>div{grid-template-columns:1fr!important;gap:26px!important}
+  #short-biography{padding-top:78px!important;padding-bottom:78px!important}
+}
+</style>
+
+</head>
+<body>
+<header><a class="identity" href="../index.html">Ham Chan / Pianist</a><button class="menu">Menu +</button></header>
+<main>
+<section id="full-biography" class="hero">
+<span class="kicker">01 / About</span>
+<h1>About</h1>
+<div class="hero-photo"><img src="../assets/about-main.jpg" alt="Ham Chan, pianist"></div>
+<p class="intro">A musical life shaped by curiosity, character and an independent path to the piano.</p>
+</section>
+<div class="rule"></div>
+<section class="story">
+<div class="story-grid">
+<aside class="side">Biography<br>Hong Kong →<br>Washington, D.C.</aside>
+<div class="bio">
+<p>Hong Kong pianist Ham Chan is recognized for the poetic clarity and expressive depth of his artistry. His debut album, Masks under the Mask (Centaur Records, 2025), devoted to Robert Schumann’s piano character pieces, received a Silver Award from the Global Music Awards and has drawn international critical attention. China Art praised the recording’s delicate tone and refined sensitivity, while Fanfare noted Chan’s clarity of articulation and deep respect for the score, concluding that in moments of Eusebius, Chan is among the finest interpreters. Writing in the American Record Guide, critics observed a distinctive artistic flair shaped by an independent musical upbringing and a strong affinity for character-driven repertoire.</p>
+<p>Chan has performed across Europe, Asia, and North America, with festival appearances including Stars at the Rhine in Switzerland, Beethoven Bootcamp in Ireland, the Rebecca Penneys Piano Festival in the United States, and Music Fest Perugia in Italy. His performances and recordings have also reached audiences through radio broadcasts, including Alabama Public Radio and WCNY. Alongside his performance career, he is active as an educator and has presented a masterclass at Salisbury University.</p>
+<p>Known for his imaginative approach to programming, Chan is drawn to projects that connect music with literary, historical, and psychological ideas. His repertoire spans from Bach to contemporary works, with particular attention to music that explores narrative, contrast, and inner character. This curiosity also informs his work as Founder and Artistic Director of the Capital Keys Performing Arts Foundation and Capital Keys Concert Series, which he established not only to broaden public access to classical music, but also as a platform for exploring new possibilities in concert programming—bringing together distinctive repertoire, thematic ideas, collaborations, and educational perspectives to create more engaging ways of experiencing classical music.</p>
+<p>Among these initiatives is Schubert 200, a nine-concert exploration of Schubert’s chamber music with piano and song leading to the composer’s bicentenary in 2028. Developed across multiple seasons, the project approaches Schubert’s music as an evolving artistic journey rather than a conventional concert cycle, bringing together performers, repertoire, and contextual programming to illuminate different dimensions of the composer’s musical world.</p>
+<p>Chan began formal piano study at the age of eighteen, a late start that fostered an independent and introspective artistic voice. He holds a Doctor of Musical Arts in Piano Performance from the University of Maryland, College Park, and studied previously at the Mannes School of Music, the Boston Conservatory at Berklee, and Hong Kong Baptist University. His teachers include Larissa Dedova, Vladimir Valjarevic, Janice Weber, Gregory Haimovsky, and Pang Jane Cheung.</p>
+</div>
+<aside class="marginal"><div>Recording<br>Masks under the Mask<br>Centaur Records · 2025</div><div>Broadcast<br>Alabama Public Radio<br>WCNY</div><div>Artistic work<br>Capital Keys<br>Schubert 200</div></aside>
+</div>
+</section>
+<section class="break">
+<img src="../assets/about-secondary.jpg" alt="Ham Chan, pianist">
+<div class="break-words">Music as<br><i>character.</i><br>Programming<br>as discovery.</div>
+<p class="break-note">Performance, recording and artistic direction meet in projects built around narrative, contrast and the possibilities of how classical music can be experienced.</p>
+</section>
+<section class="path">
+<div class="path-top"><span class="label">02 / The path</span><span class="label">Formal piano study began at eighteen</span></div>
+<h2>Hong Kong →<br>Boston → New York →<br>Maryland</h2>
+</section>
+<section class="closing">
+<h2>Biography<br>&amp; materials</h2>
+<div class="resources"><a href="#short-biography">Short biography ↗</a><a href="#full-biography">Full biography ↗</a><a href="../press/index.html">Press kit ↗</a><a href="../contact/index.html">Contact ↗</a></div>
+</section>
+<section id="short-biography" style="padding:8vw 6vw;border-top:1px solid rgba(23,23,20,.22)">
+  <div style="display:grid;grid-template-columns:1fr 2fr;gap:7vw">
+    <div><span class="eyebrow">Short biography</span></div>
+    <div style="max-width:900px">
+      <p style='font:400 clamp(24px,2.2vw,32px)/1.48 "Instrument Serif",Georgia,serif;margin:0'>
+      Hong Kong pianist Ham Chan is recognized for the poetic clarity and expressive depth of his artistry. His debut album, <i>Masks under the Mask</i> (Centaur Records, 2025), devoted to the character pieces of Robert Schumann, received a Silver Award from the Global Music Awards and has drawn critical attention from <i>Pianist Magazine</i>, <i>Fanfare</i>, <i>American Record Guide</i>, and <i>Art China</i>.<br><br>
+      Chan has performed across Europe, Asia, and North America, with festival appearances in Switzerland, Ireland, Italy, and the United States. Drawn to projects connecting music with literary, historical, and psychological ideas, he is Founder and Artistic Director of the Capital Keys Performing Arts Foundation and part of the artistic leadership of Schubert 200, a nine-concert exploration of Schubert’s chamber music and song leading to the composer’s bicentenary in 2028.<br><br>
+      He holds a Doctor of Musical Arts in Piano Performance from the University of Maryland and studied previously at the Mannes School of Music, the Boston Conservatory at Berklee, and Hong Kong Baptist University.
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+<footer><span>Ham Chan · Pianist</span><span>© 2026</span><a href="#full-biography">Back to top ↑</a></footer>
+
+<div class="site-menu-overlay" id="siteMenu" aria-hidden="true">
+  <div class="site-menu-top"><span class="id">Ham Chan / Pianist</span><button class="site-menu-close" type="button">Close ×</button></div>
+  <nav class="site-menu-links" aria-label="Main navigation">
+    <a href="../index.html">Home</a><a href="../about/index.html">About</a><a href="../recordings/index.html">Recordings</a>
+    <a href="../watch/index.html">Watch</a><a href="../concerts/index.html">Concerts</a><a href="../press/index.html">Press</a><a href="../contact/index.html">Contact</a>
+  </nav>
+  <div class="site-menu-bottom">
+    <a href="https://www.instagram.com/hamchanpianist/" target="_blank" rel="noopener">Instagram ↗</a>
+    <span>Ham Chan · Pianist</span>
+  </div>
+</div>
+<script>
+(()=>{const o=document.getElementById('siteMenu');if(!o)return;
+document.querySelectorAll('.menu').forEach(b=>b.addEventListener('click',()=>{o.classList.add('open');o.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}));
+o.querySelector('.site-menu-close').addEventListener('click',()=>{o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''}});
+})();
+</script>
+
+</body></html>

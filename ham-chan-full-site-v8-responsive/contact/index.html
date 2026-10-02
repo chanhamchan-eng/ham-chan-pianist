@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Ham Chan, Pianist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f2eee5;--ink:#171714;--muted:#756f65;--line:rgba(23,23,20,.22)}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink)}
+body{font-family:"DM Sans",sans-serif;font-weight:300}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.58}
+header{height:88px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between}
+.id,.menu,.eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase}
+.menu{border:0;background:none;color:inherit;font:inherit;cursor:pointer}
+main{min-height:calc(100vh - 88px)}
+.contact{padding:7vw 6vw 6vw;min-height:calc(100vh - 88px);display:flex;flex-direction:column;justify-content:space-between}
+.topline{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:17px}
+.contact h1{font:400 clamp(92px,15vw,230px)/.76 "Instrument Serif";letter-spacing:-.07em;margin:8vw 0 7vw;max-width:1100px}
+.contact h1 i{font-weight:400}
+.lower{display:grid;grid-template-columns:1fr 1.45fr;gap:10vw;align-items:end}
+.context{font:400 clamp(22px,2vw,30px)/1.35 "Instrument Serif";max-width:380px;margin:0}
+.email-wrap{border-top:1px solid var(--line);padding-top:22px}
+.email-label{display:block;font-size:9px;letter-spacing:.17em;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
+.email{font:400 clamp(30px,4vw,62px)/1 "Instrument Serif";letter-spacing:-.035em;border-bottom:1px solid var(--ink);padding-bottom:5px}
+.for{padding:9vw 6vw 11vw}
+.for-grid{display:grid;grid-template-columns:1fr 2fr;gap:6vw}
+.for h2{font:400 clamp(64px,9vw,132px)/.82 "Instrument Serif";letter-spacing:-.055em;margin:0}
+.items{margin-top:12px}
+.item{border-top:1px solid var(--line);padding:24px 0;display:grid;grid-template-columns:50px 1fr;align-items:center}
+.item:last-child{border-bottom:1px solid var(--line)}
+.num{font-size:9px;letter-spacing:.14em;color:var(--muted)}
+.item span:last-child{font:400 clamp(24px,2.5vw,38px)/1.1 "Instrument Serif"}
+footer{border-top:1px solid var(--line);padding:32px 6vw;display:flex;justify-content:space-between;font-size:9px;letter-spacing:.15em;text-transform:uppercase}
+@media(max-width:760px){
+header{padding:0 24px}
+.contact{padding:70px 24px 75px;min-height:78vh}
+.contact h1{font-size:25vw;margin:85px 0}
+.lower{display:block}
+.context{margin-bottom:65px;width:82%}
+.email{font-size:8vw}
+.for{padding:85px 24px}
+.for-grid{display:block}
+.for h2{font-size:20vw;margin-bottom:65px}
+footer{padding:30px 24px;gap:20px;flex-wrap:wrap}
+}
+
+.form-section{padding:2vw 6vw 11vw}
+.form-grid{display:grid;grid-template-columns:1fr 2fr;gap:6vw}
+.form-intro h2{font:400 clamp(64px,9vw,132px)/.82 "Instrument Serif";letter-spacing:-.055em;margin:18px 0 0}
+.form{max-width:900px}
+.field{border-top:1px solid var(--line);padding:22px 0 28px}
+.field label{display:block;font-size:9px;letter-spacing:.17em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.field input,.field textarea{width:100%;border:0;outline:0;background:transparent;color:var(--ink);font:400 25px/1.35 "Instrument Serif";padding:0}
+.field textarea{min-height:150px;resize:vertical}
+.field:last-of-type{border-bottom:1px solid var(--line)}
+.submit{margin-top:30px;border:0;border-bottom:1px solid var(--ink);background:transparent;padding:0 0 7px;color:var(--ink);font:400 11px "DM Sans";letter-spacing:.16em;text-transform:uppercase;cursor:pointer}
+.form-note{font-size:10px;line-height:1.6;color:var(--muted);margin-top:25px;max-width:520px}
+@media(max-width:760px){.form-section{padding:20px 24px 90px}.form-grid{display:block}.form-intro h2{font-size:20vw;margin-bottom:65px}}
+
+</style>
+
+<style id="site-nav-style">
+.site-menu-overlay{position:fixed;inset:0;background:#171714;color:#f2eee5;z-index:9999;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s ease;padding:34px 5vw 38px;display:flex;flex-direction:column}
+.site-menu-overlay.open{opacity:1;visibility:visible}
+.site-menu-top{display:flex;justify-content:space-between;align-items:center}
+.site-menu-close{border:0;background:transparent;color:inherit;font:400 10px "DM Sans",sans-serif;letter-spacing:.18em;text-transform:uppercase;cursor:pointer}
+.site-menu-links{margin:auto 0;display:flex;flex-direction:column;align-items:flex-start}
+.site-menu-links a{font:400 clamp(48px,7vw,108px)/.82 "Instrument Serif",Georgia,serif;letter-spacing:-.045em;color:inherit;text-decoration:none}
+.site-menu-links a:hover{font-style:italic;opacity:1}
+.site-menu-bottom{display:flex;justify-content:space-between;gap:25px;align-items:end;font:400 9px "DM Sans",sans-serif;letter-spacing:.16em;text-transform:uppercase}
+.site-menu-bottom a{color:inherit}
+@media(max-width:760px){.site-menu-overlay{padding:28px 24px}.site-menu-links a{font-size:16vw}.site-menu-bottom{flex-wrap:wrap}}
+</style>
+
+
+<style id="responsive-balance-v7">
+/* Responsive balance pass — content/design baseline remains V6 */
+html{scroll-behavior:smooth}
+img{max-width:100%}
+
+/* Large desktop: prevent compositions from becoming excessively stretched */
+@media (min-width:1440px){
+  main>section, footer, header{max-width:1800px;margin-left:auto;margin-right:auto}
+}
+
+/* Tablet / compact desktop */
+@media (max-width:1100px){
+  section{padding-left:5vw!important;padding-right:5vw!important}
+  header{padding-left:5vw!important;padding-right:5vw!important}
+  .hero{min-height:88vh}
+  .hero h1{font-size:clamp(92px,15vw,180px)!important}
+  .recording-grid,.about-grid,.project-grid,.press-grid{gap:5vw!important}
+  .site-menu-links a{font-size:clamp(54px,9vw,90px)}
+}
+
+/* Mobile */
+@media (max-width:760px){
+  body{overflow-x:hidden}
+  header{padding:22px 22px!important}
+  section{padding-left:22px!important;padding-right:22px!important}
+  .hero{min-height:auto!important;padding-top:110px!important;padding-bottom:72px!important}
+  .hero h1{font-size:clamp(72px,23vw,118px)!important;line-height:.78!important}
+  .hero .portrait, .hero img{max-height:64vh}
+  h2{overflow-wrap:normal}
+  p{max-width:100%}
+  .site-menu-overlay{padding:24px 22px 28px}
+  .site-menu-links{gap:2px}
+  .site-menu-links a{font-size:15.5vw;line-height:.88}
+  .site-menu-bottom{font-size:8px;line-height:1.5}
+  .footer-row{gap:24px!important;align-items:flex-start!important}
+}
+
+/* Small phones */
+@media (max-width:430px){
+  header{padding:19px 18px!important}
+  section{padding-left:18px!important;padding-right:18px!important}
+  .hero{padding-top:96px!important}
+  .site-menu-overlay{padding-left:18px;padding-right:18px}
+  .site-menu-links a{font-size:16vw}
+}
+
+/* Touch targets */
+@media (pointer:coarse){
+  a,button{min-height:40px}
+  .site-menu-links a{min-height:0}
+}
+</style>
+
+
+<style id="contact-responsive-v7">
+@media(max-width:760px){
+  .contact-grid,.form-grid{grid-template-columns:1fr!important;gap:38px!important}
+  input,textarea{font-size:16px!important}
+}
+</style>
+
+</head>
+<body>
+<header>
+<a class="id" href="../index.html">Ham Chan / Pianist</a>
+<button class="menu">Menu +</button>
+</header>
+
+<main>
+<section class="contact">
+<div>
+<div class="topline">
+<span class="eyebrow">Contact</span>
+<span class="eyebrow">Ham Chan</span>
+</div>
+<h1>Get in<br><i>touch.</i></h1>
+</div>
+
+<div class="lower">
+<p class="context">For performances, collaborations, press, masterclasses and teaching inquiries.</p>
+<div class="email-wrap">
+<span class="email-label">Email</span>
+<a class="email" href="mailto:drhcpiano@gmail.com">drhcpiano@gmail.com</a>
+</div>
+</div>
+</section>
+
+<section class="for">
+<div class="for-grid">
+<div><span class="eyebrow">Inquiries</span><h2>Write<br><i>for</i></h2></div>
+<div class="items">
+<div class="item"><span class="num">01</span><span>Performance engagements</span></div>
+<div class="item"><span class="num">02</span><span>Artistic collaborations</span></div>
+<div class="item"><span class="num">03</span><span>Press &amp; media</span></div>
+<div class="item"><span class="num">04</span><span>Masterclasses &amp; teaching</span></div>
+</div>
+</div>
+</section>
+
+<section class="form-section">
+<div class="form-grid">
+<div class="form-intro"><span class="eyebrow">Or send a message</span><h2>Leave a<br><i>note.</i></h2></div>
+<form class="form" action="mailto:drhcpiano@gmail.com" method="post" enctype="text/plain">
+<div class="field"><label for="name">Name</label><input id="name" name="Name" type="text" required></div>
+<div class="field"><label for="email">Email</label><input id="email" name="Email" type="email" required></div>
+<div class="field"><label for="subject">Subject</label><input id="subject" name="Subject" type="text"></div>
+<div class="field"><label for="message">Message</label><textarea id="message" name="Message" required></textarea></div>
+<button class="submit" type="submit">Send message ↗</button>
+<p class="form-note">The form will be connected to a proper form handler when the finished site is deployed, so visitors can send messages directly without opening their email application.</p>
+</form>
+</div>
+</section>
+
+</main>
+
+<footer>
+<span>Ham Chan · Pianist</span>
+<span>Contact</span>
+<span>© 2026</span>
+</footer>
+
+<div class="site-menu-overlay" id="siteMenu" aria-hidden="true">
+  <div class="site-menu-top"><span class="id">Ham Chan / Pianist</span><button class="site-menu-close" type="button">Close ×</button></div>
+  <nav class="site-menu-links" aria-label="Main navigation">
+    <a href="../index.html">Home</a><a href="../about/index.html">About</a><a href="../recordings/index.html">Recordings</a>
+    <a href="../watch/index.html">Watch</a><a href="../concerts/index.html">Concerts</a><a href="../press/index.html">Press</a><a href="../contact/index.html">Contact</a>
+  </nav>
+  <div class="site-menu-bottom">
+    <a href="https://www.instagram.com/hamchanpianist/" target="_blank" rel="noopener">Instagram ↗</a>
+    <span>Ham Chan · Pianist</span>
+  </div>
+</div>
+<script>
+(()=>{const o=document.getElementById('siteMenu');if(!o)return;
+document.querySelectorAll('.menu').forEach(b=>b.addEventListener('click',()=>{o.classList.add('open');o.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}));
+o.querySelector('.site-menu-close').addEventListener('click',()=>{o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''}});
+})();
+</script>
+
+</body>
+</html>

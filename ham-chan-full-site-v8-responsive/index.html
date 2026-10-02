@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ham Chan — Pianist | Home Preview</title>
+<meta name="description" content="Ham Chan, pianist — homepage design preview.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f2eee5;--ink:#171714;--muted:#756f65;--wine:#6f252b;--line:rgba(23,23,20,.22)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;font-weight:300}
+a{color:inherit;text-decoration:none} a:hover{opacity:.58}
+header{position:absolute;z-index:10;top:0;left:0;right:0;padding:28px 4vw;display:flex;justify-content:flex-end;align-items:center}
+.menu{border:0;background:none;font:500 12px/1 "DM Sans";letter-spacing:.15em;text-transform:uppercase;padding:12px 0;color:var(--ink)}
+section{position:relative;padding:9vw 6vw;border-top:1px solid var(--line)}
+.hero{min-height:780px;border-top:0;padding-top:120px;overflow:hidden}
+.hero-name{font-family:"Instrument Serif",serif;line-height:.72;letter-spacing:-.065em;font-size:clamp(110px,20vw,310px);position:relative;z-index:2}
+.hero-name .given{display:block}.hero-name .family{display:block;margin-left:26vw;font-style:italic}
+.role{font-family:"Instrument Serif",serif;font-style:italic;font-size:clamp(30px,4vw,62px);margin:40px 0 0 7vw}
+.hero-image{position:absolute;right:9vw;top:155px;width:min(31vw,430px);height:500px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:rgba(255,255,255,.15)}
+.hero-note{position:absolute;left:6vw;bottom:42px;display:flex;gap:32px;color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.interlude{min-height:520px;display:flex;align-items:center;justify-content:center;text-align:center}
+.num{position:absolute;left:6vw;top:45px;font-size:11px;letter-spacing:.14em}
+.interlude blockquote{margin:0;max-width:900px;font-family:"Instrument Serif",serif;font-size:clamp(48px,7vw,104px);line-height:.92;letter-spacing:-.03em}
+.interlude blockquote em{font-weight:400}.source{position:absolute;bottom:50px;font-size:11px;letter-spacing:.15em;text-transform:uppercase}
+.recording{min-height:900px;overflow:hidden}
+.record-label{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.dual{display:flex;justify-content:space-between;margin:90px 3vw 0}
+.dual div{display:flex;flex-direction:column}.dual i{font-family:"Instrument Serif";font-size:42px}.dual small{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.recording h2{font-family:"Instrument Serif";font-weight:400;font-size:clamp(80px,13vw,190px);line-height:.72;letter-spacing:-.05em;margin:45px 0 20px;position:relative;z-index:2}
+.album{position:absolute;right:7vw;top:320px;width:min(32vw,450px);aspect-ratio:1;border:1px solid var(--line);background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.record-copy{width:min(440px,38vw);margin:65px 0 0 4vw}
+.record-copy .composer{font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:22px}
+.record-copy .desc{font-family:"Instrument Serif";font-size:27px;line-height:1.13;margin:0 0 30px}
+.textlink{font-size:11px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:5px}
+.award{position:absolute;right:8vw;bottom:65px;text-align:right;font-size:10px;letter-spacing:.14em;text-transform:uppercase;line-height:1.6}
+.award strong{font-family:"Instrument Serif";font-size:28px;font-weight:400;letter-spacing:0;text-transform:none}
+.listening{min-height:760px;display:grid;grid-template-columns:1.25fr .75fr;gap:8vw;align-items:center}
+.video{height:520px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.listen-copy span,.eyebrow{font-size:10px;letter-spacing:.15em;text-transform:uppercase}.listen-copy h2{font-family:"Instrument Serif";font-weight:400;font-size:clamp(78px,10vw,150px);line-height:.72;letter-spacing:-.05em;margin:32px 0}.listen-copy p{max-width:310px;color:var(--muted);line-height:1.55;margin-bottom:32px}
+.press{min-height:650px;overflow:hidden}.press-title{display:flex;gap:30px;align-items:baseline}.press-title span{font-size:10px;letter-spacing:.15em}.press-title h2{font-family:"Instrument Serif";font-weight:400;font-size:clamp(76px,11vw,165px);margin:0;letter-spacing:-.05em}
+.press blockquote{font-family:"Instrument Serif";font-size:clamp(38px,5vw,70px);line-height:1.02;max-width:820px;margin:70px 0 0 18vw}
+.press blockquote cite{display:block;font-family:"DM Sans";font-style:normal;font-size:10px;letter-spacing:.15em;text-transform:uppercase;margin-top:24px}
+.press-notes{position:absolute;right:7vw;bottom:55px;width:270px;font-size:13px;line-height:1.6;color:var(--muted)}
+.ghost{position:absolute;right:-1vw;top:90px;font-family:"Instrument Serif";font-size:20vw;opacity:.035}
+.concerts{min-height:540px;display:flex;flex-direction:column;justify-content:center}
+.concert-head span{font-size:10px;letter-spacing:.15em}.concert-head h2{font-family:"Instrument Serif";font-weight:400;font-size:clamp(100px,16vw,230px);line-height:.75;letter-spacing:-.06em;margin:25px 0 35px}
+.coming{display:flex;align-items:center;gap:22px;margin-left:36vw;font-size:11px;letter-spacing:.18em;text-transform:uppercase}.coming:before{content:"";width:80px;height:1px;background:var(--ink)}
+.projects{min-height:800px;display:grid;grid-template-columns:.85fr 1.15fr;gap:8vw;align-items:center}
+.project-image{height:600px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.project-copy .eyebrow{display:block;margin-bottom:50px}.project-copy .smalllead{font-size:10px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+.project-copy .ck{font-family:"Instrument Serif";font-size:clamp(70px,9vw,132px);font-weight:400;line-height:.78;letter-spacing:-.045em;margin:0 0 54px}
+.project-copy .and{font-family:"Instrument Serif";font-style:italic;font-size:25px;margin:0 0 10px 5vw}
+.project-copy .schubert{font-family:"Instrument Serif";font-size:clamp(55px,7vw,104px);font-style:italic;font-weight:400;line-height:.82;letter-spacing:-.04em;margin:0 0 25px 8vw}
+.project-copy .journey{font-family:"Instrument Serif";font-size:25px;line-height:1.18;max-width:470px;margin-left:8vw}
+.project-links{display:flex;gap:28px;margin:55px 0 0 8vw}
+.about{min-height:760px}.about h2{font-family:"Instrument Serif";font-weight:400;font-size:clamp(48px,6.5vw,96px);line-height:.98;max-width:1120px;margin:40px 0}
+.about-image{height:320px;width:38%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-left:auto}
+.about-copy{width:43%;margin:-100px 0 0 7vw;line-height:1.6;color:var(--muted)}
+footer{padding:8vw 6vw 3vw;border-top:1px solid var(--line)}footer>span{font-size:10px;letter-spacing:.15em}footer h2{font-family:"Instrument Serif";font-size:clamp(64px,9vw,130px);font-weight:400;line-height:.84;letter-spacing:-.05em;margin:50px 0}.email{font-size:18px;border-bottom:1px solid var(--ink);padding-bottom:5px}.footer-row{display:flex;justify-content:space-between;margin-top:100px;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.footer-row div{display:flex;gap:25px}
+
+.hero-real{overflow:hidden;background:none}
+.hero-real img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block}
+.album-real{height:auto;background:none;border:0;display:block}
+.album-real img{display:block;width:100%;height:auto;box-shadow:0 24px 55px rgba(20,15,10,.14)}
+
+
+.poster-real{height:600px;background:none;overflow:hidden;padding:0}
+.poster-real img{width:100%;height:100%;object-fit:contain;display:block}
+.about-real{overflow:hidden;background:none;padding:0}
+.about-real img{width:100%;height:100%;object-fit:contain;object-position:center center;display:block}
+
+@media(max-width:800px){
+section{padding:90px 24px}.hero{min-height:680px;padding-top:110px}.hero-name{font-size:28vw}.hero-name .family{margin-left:13vw}.hero-image{right:24px;top:290px;width:46vw;height:270px;opacity:.55}.hero-note{left:24px;bottom:25px;display:block}.hero-note span{display:block;margin-top:6px}
+.recording{min-height:1020px}.dual{margin-top:55px}.dual i{font-size:28px}.album{position:relative;top:auto;right:auto;width:72vw;margin:40px 0 0 auto}.record-copy{width:80%;margin:45px 0 0}.award{position:relative;right:auto;bottom:auto;text-align:left;margin:50px 0 0}
+.listening{display:block}.video{height:360px;margin-bottom:55px}.press blockquote{margin-left:0}.press-notes{position:relative;right:auto;bottom:auto;margin:60px 0 0 auto}.coming{margin-left:20vw}
+.projects{display:block}.project-image{height:390px;margin-bottom:65px}.project-copy .ck{font-size:20vw}.project-copy .schubert,.project-copy .journey,.project-links{margin-left:0}.about-image{width:70%;height:260px}.about-copy{width:90%;margin:45px 0 0}.footer-row{gap:25px;flex-wrap:wrap}
+}
+</style>
+
+<style id="site-nav-style">
+.site-menu-overlay{position:fixed;inset:0;background:#171714;color:#f2eee5;z-index:9999;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s ease;padding:34px 5vw 38px;display:flex;flex-direction:column}
+.site-menu-overlay.open{opacity:1;visibility:visible}
+.site-menu-top{display:flex;justify-content:space-between;align-items:center}
+.site-menu-close{border:0;background:transparent;color:inherit;font:400 10px "DM Sans",sans-serif;letter-spacing:.18em;text-transform:uppercase;cursor:pointer}
+.site-menu-links{margin:auto 0;display:flex;flex-direction:column;align-items:flex-start}
+.site-menu-links a{font:400 clamp(48px,7vw,108px)/.82 "Instrument Serif",Georgia,serif;letter-spacing:-.045em;color:inherit;text-decoration:none}
+.site-menu-links a:hover{font-style:italic;opacity:1}
+.site-menu-bottom{display:flex;justify-content:space-between;gap:25px;align-items:end;font:400 9px "DM Sans",sans-serif;letter-spacing:.16em;text-transform:uppercase}
+.site-menu-bottom a{color:inherit}
+@media(max-width:760px){.site-menu-overlay{padding:28px 24px}.site-menu-links a{font-size:16vw}.site-menu-bottom{flex-wrap:wrap}}
+</style>
+
+
+<style id="responsive-balance-v7">
+/* Responsive balance pass — content/design baseline remains V6 */
+html{scroll-behavior:smooth}
+img{max-width:100%}
+
+/* Large desktop: prevent compositions from becoming excessively stretched */
+@media (min-width:1440px){
+  main>section, footer, header{max-width:1800px;margin-left:auto;margin-right:auto}
+}
+
+/* Tablet / compact desktop */
+@media (max-width:1100px){
+  section{padding-left:5vw!important;padding-right:5vw!important}
+  header{padding-left:5vw!important;padding-right:5vw!important}
+  .hero{min-height:88vh}
+  .hero h1{font-size:clamp(92px,15vw,180px)!important}
+  .recording-grid,.about-grid,.project-grid,.press-grid{gap:5vw!important}
+  .site-menu-links a{font-size:clamp(54px,9vw,90px)}
+}
+
+/* Mobile */
+@media (max-width:760px){
+  body{overflow-x:hidden}
+  header{padding:22px 22px!important}
+  section{padding-left:22px!important;padding-right:22px!important}
+  .hero{min-height:auto!important;padding-top:110px!important;padding-bottom:72px!important}
+  .hero h1{font-size:clamp(72px,23vw,118px)!important;line-height:.78!important}
+  .hero .portrait, .hero img{max-height:64vh}
+  h2{overflow-wrap:normal}
+  p{max-width:100%}
+  .site-menu-overlay{padding:24px 22px 28px}
+  .site-menu-links{gap:2px}
+  .site-menu-links a{font-size:15.5vw;line-height:.88}
+  .site-menu-bottom{font-size:8px;line-height:1.5}
+  .footer-row{gap:24px!important;align-items:flex-start!important}
+}
+
+/* Small phones */
+@media (max-width:430px){
+  header{padding:19px 18px!important}
+  section{padding-left:18px!important;padding-right:18px!important}
+  .hero{padding-top:96px!important}
+  .site-menu-overlay{padding-left:18px;padding-right:18px}
+  .site-menu-links a{font-size:16vw}
+}
+
+/* Touch targets */
+@media (pointer:coarse){
+  a,button{min-height:40px}
+  .site-menu-links a{min-height:0}
+}
+</style>
+
+
+<style id="home-responsive-v7">
+@media(max-width:760px){
+  .quote,.recording,.listening,.press,.project,.about{padding-top:80px!important;padding-bottom:80px!important}
+  .recording-grid,.project-grid,.about-grid{grid-template-columns:1fr!important}
+  .recording-grid{gap:46px!important}
+  .project-grid,.about-grid{gap:40px!important}
+  .listening .listening-copy{margin:0!important;width:100%!important}
+  .about-real{height:auto!important;min-height:0!important}
+  .about-real img{height:auto!important;object-fit:contain!important}
+  .footer-row{display:flex!important;flex-direction:column!important}
+  .footer-row div{display:flex;gap:20px;flex-wrap:wrap}
+}
+</style>
+
+
+<style id="home-mobile-v8">
+/* V8 — intentional mobile homepage composition. Desktop/V6 baseline unchanged. */
+@media(max-width:760px){
+  .hero{
+    min-height:0!important;
+    padding:104px 22px 42px!important;
+    overflow:visible!important;
+    display:flex;
+    flex-direction:column;
+  }
+  .hero-name{
+    font-size:clamp(94px,29vw,126px)!important;
+    line-height:.68!important;
+    letter-spacing:-.065em;
+    width:100%;
+  }
+  .hero-name .given{display:block}
+  .hero-name .family{margin-left:13vw!important}
+  .role{
+    order:2;
+    margin:34px 0 24px 7vw!important;
+    font-size:clamp(39px,12vw,52px)!important;
+    line-height:1;
+  }
+  .hero-image{
+    order:3;
+    position:relative!important;
+    top:auto!important;right:auto!important;left:auto!important;
+    width:72vw!important;
+    height:auto!important;
+    aspect-ratio:4/5;
+    margin:0 0 0 auto!important;
+    opacity:1!important;
+    border:0;
+  }
+  .hero-real img{
+    width:100%!important;height:100%!important;max-height:none!important;
+    object-fit:cover!important;
+    object-position:center 22%!important;
+  }
+  .hero-note{
+    order:4;
+    position:relative!important;
+    left:auto!important;right:auto!important;bottom:auto!important;
+    margin:27px 0 0!important;
+    padding-top:18px;
+    border-top:1px solid var(--line);
+    display:flex!important;
+    flex-direction:column;
+    gap:7px!important;
+    font-size:9px!important;
+    line-height:1.45;
+    letter-spacing:.105em;
+  }
+  .hero-note span{display:block!important;margin:0!important}
+  .interlude{
+    min-height:0!important;
+    padding-top:76px!important;
+    padding-bottom:82px!important;
+    display:block!important;
+    text-align:left!important;
+  }
+  .interlude .num{position:relative!important;left:auto!important;top:auto!important;display:block;margin-bottom:70px}
+  .interlude blockquote{font-size:clamp(48px,14.5vw,64px)!important;line-height:.94!important}
+  .interlude .source{position:relative!important;bottom:auto!important;display:inline-block;margin-top:40px;font-size:9px}
+}
+@media(max-width:430px){
+  .hero{padding:94px 18px 38px!important}
+  .hero-name{font-size:clamp(90px,29vw,116px)!important}
+  .hero-image{width:76vw!important}
+  .interlude{padding-top:68px!important;padding-bottom:74px!important}
+}
+</style>
+
+</head>
+<body>
+<header><button class="menu">MENU +</button></header>
+<main id="top">
+<section class="hero">
+  <div class="hero-name"><span class="given">Ham</span><span class="family">Chan</span></div>
+  <div class="hero-image hero-real"><img src="assets/ham-chan-home.jpg" alt="Ham Chan, pianist"></div>
+  <p class="role">pianist</p>
+  <div class="hero-note"><span>Hong Kong → Washington, D.C.</span><span>performance · recording · collaboration</span></div>
+</section>
+
+<section class="interlude">
+  <span class="num">01</span>
+  <blockquote>“Individual and full of curiosity…<br><em>profoundly musical.</em>”</blockquote>
+  <a class="source" href="https://www.pianistmagazine.com/blogs/review-sensitive-schumann-playing-from-ham-chan/">John Evans · Pianist Magazine ↗</a>
+</section>
+
+<section id="recording" class="recording">
+  <div class="record-label"><span>Centaur Records</span><span>2025</span></div>
+  <div class="dual">
+    <div><i>Florestan</i><small>impulse / fire / outward</small></div>
+    <div><i>Eusebius</i><small>reflection / intimacy / inward</small></div>
+  </div>
+  <h2>Masks <em>under</em><br>the Mask</h2>
+  <div class="album album-real"><img src="assets/masks-under-the-mask.jpg" alt="Masks under the Mask album cover"></div>
+  <div class="record-copy">
+    <p class="composer">Robert Schumann</p>
+    <p class="desc">A two-disc portrait of Schumann through the contrasting voices that inhabited his musical imagination.</p>
+    <a class="textlink" href="recordings/index.html">Explore the recording ↘</a>
+  </div>
+  <aside class="award">GLOBAL MUSIC AWARDS<br><strong>Silver Medal · 2025</strong></aside>
+</section>
+
+<section class="listening">
+  
+  <div class="listen-copy">
+    <span>SELECTED LISTENING / 01</span>
+    <h2>At the<br><i>piano</i></h2>
+    <p>Selected recital, chamber and recording performances.</p>
+    <a class="textlink" href="watch/index.html">Watch performances ↗</a>
+  </div>
+</section>
+
+<section class="press">
+  <div class="press-title"><span>02</span><h2>In print</h2></div>
+  <blockquote>“...among the finest interpreters.”<cite>— Fanfare</cite></blockquote>
+  <div class="press-notes"><p>Reviews, interviews and broadcasts surrounding <i>Masks under the Mask</i> and recent performances.</p><a class="textlink" href="press/index.html">Press archive ↗</a></div>
+  <div class="ghost">PRESS</div>
+</section>
+
+<section class="concerts">
+  <div class="concert-head"><span>03 / LIVE</span><h2>Live</h2></div>
+  <div class="coming">Coming soon</div>
+</section>
+
+<section class="projects">
+  <div class="project-image poster-real"><a href="https://www.eventbrite.com/e/schubert-200-project-chapter-i-the-beginning-tickets-1993722563858?aff=oddtdtcreator" target="_blank" rel="noopener"><img src="assets/schubert-200-chapter-i-poster-cropped.jpg" alt="Schubert 200 Chapter I poster"></a></div>
+  <div class="project-copy">
+    <span class="eyebrow">ARTISTIC WORK / 2026—</span>
+    <p class="smalllead">Founder &amp; Artistic Director</p>
+    <h2 class="ck">Capital<br>Keys</h2>
+    <p class="and">and co-artistic leadership of</p>
+    <h3 class="schubert"><a href="https://www.capitalkeys.org/schubert200" target="_blank" rel="noopener">Schubert 200</a></h3>
+    <p class="journey">a nine-concert journey through Schubert’s chamber music and song.</p>
+    <div class="project-links"><a class="textlink" href="https://capitalkeys.org">Capital Keys ↗</a><a class="textlink" href="https://www.capitalkeys.org/schubert200" target="_blank" rel="noopener">Schubert 200 ↗</a></div>
+  </div>
+</section>
+
+<section class="about">
+  <span class="num">04</span>
+  <h2>Ham Chan is a Hong Kong pianist whose work moves between solo performance, chamber music, recording and artistic collaboration.</h2>
+  <div class="about-image about-real"><img src="assets/ham-chan-standing.jpg" alt="Ham Chan, pianist"></div>
+  <div class="about-copy"><p>His recording <i>Masks under the Mask</i> explores the inner worlds of Robert Schumann. His performances and projects bring together repertoire, collaborators and audiences across the United States and beyond.</p><a class="textlink" href="about/index.html">Biography ↗</a></div>
+</section>
+</main>
+
+<footer>
+  <span>05 / CONTACT</span>
+  <h2>For performances,<br><i>collaborations</i> &amp; press.</h2>
+  <a class="email" href="mailto:drhcpiano@gmail.com">drhcpiano@gmail.com ↗</a>
+  <div class="footer-row"><p>HAM CHAN · PIANIST</p><div><a href="watch/index.html">Watch</a><a href="press/index.html">Press</a><a href="concerts/index.html">Concerts</a></div><p>© 2026</p></div>
+</footer>
+
+<div class="site-menu-overlay" id="siteMenu" aria-hidden="true">
+  <div class="site-menu-top"><span class="id">Ham Chan / Pianist</span><button class="site-menu-close" type="button">Close ×</button></div>
+  <nav class="site-menu-links" aria-label="Main navigation">
+    <a href="index.html">Home</a><a href="about/index.html">About</a><a href="recordings/index.html">Recordings</a>
+    <a href="watch/index.html">Watch</a><a href="concerts/index.html">Concerts</a><a href="press/index.html">Press</a><a href="contact/index.html">Contact</a>
+  </nav>
+  <div class="site-menu-bottom">
+    <a href="https://www.instagram.com/hamchanpianist/" target="_blank" rel="noopener">Instagram ↗</a>
+    <span>Ham Chan · Pianist</span>
+  </div>
+</div>
+<script>
+(()=>{const o=document.getElementById('siteMenu');if(!o)return;
+document.querySelectorAll('.menu').forEach(b=>b.addEventListener('click',()=>{o.classList.add('open');o.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}));
+o.querySelector('.site-menu-close').addEventListener('click',()=>{o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''}});
+})();
+</script>
+
+</body>
+</html>

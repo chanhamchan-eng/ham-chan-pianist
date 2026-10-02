@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Watch — Ham Chan, Pianist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f2eee5;--ink:#171714;--muted:#777065;--line:rgba(23,23,20,.22)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;font-weight:300}a{color:inherit;text-decoration:none}
+header{height:88px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between}.id,.menu,.eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase}.menu{border:0;background:none}
+.intro{padding:8vw 6vw 7vw;display:grid;grid-template-columns:1fr 2fr;align-items:end}.intro h1{font:400 clamp(110px,17vw,260px)/.68 "Instrument Serif";letter-spacing:-.07em;margin:0}.intro p{font:400 clamp(22px,2vw,30px)/1.3 "Instrument Serif";max-width:420px;margin:0 0 8px auto}
+.feature{padding:0 6vw 11vw}.screen{display:block;position:relative;overflow:hidden;background:#111}.screen img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .7s ease,filter .5s ease}.screen:hover img{transform:scale(1.012);filter:brightness(.82)}.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:90px;height:90px;border:1px solid rgba(255,255,255,.7);border-radius:50%;display:grid;place-items:center;color:white;font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+.caption{display:grid;grid-template-columns:1fr 2fr;padding-top:22px}.composer{font-size:10px;letter-spacing:.15em;text-transform:uppercase}.work{font:400 clamp(31px,4vw,60px)/.95 "Instrument Serif";letter-spacing:-.035em}
+.more{padding:9vw 6vw 12vw;border-top:1px solid var(--line)}.more-head{display:flex;justify-content:space-between;margin-bottom:8vw}.video-row{display:grid;grid-template-columns:42% 1fr;gap:7vw;align-items:center;padding:5vw 0;border-top:1px solid var(--line)}.video-row:last-child{border-bottom:1px solid var(--line)}.thumb{position:relative;display:block;overflow:hidden;background:#111}.thumb img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;transition:transform .6s ease}.thumb:hover img{transform:scale(1.018)}.num{font-size:9px;letter-spacing:.14em;color:var(--muted);margin-bottom:30px}.info h2{font:400 clamp(43px,6vw,88px)/.88 "Instrument Serif";letter-spacing:-.045em;margin:0}.info h2 i{font-weight:400}.watch{display:inline-block;margin-top:38px;padding-bottom:8px;border-bottom:1px solid var(--ink);font-size:9px;letter-spacing:.17em;text-transform:uppercase}
+.end{padding:5vw 6vw 9vw;display:flex;justify-content:flex-end}.end p{font:400 26px/1.25 "Instrument Serif";width:350px}
+footer{border-top:1px solid var(--line);padding:32px 6vw;display:flex;justify-content:space-between;font-size:9px;letter-spacing:.15em;text-transform:uppercase}
+@media(max-width:760px){header{padding:0 24px}.intro{padding:80px 24px 60px;display:block}.intro h1{font-size:30vw}.intro p{margin:55px 0 0 20vw}.feature{padding:0 24px 90px}.play{width:64px;height:64px}.caption{display:block}.composer{margin-bottom:14px}.more{padding:80px 24px}.video-row{display:block;padding:60px 0}.info{padding-top:35px}.end{padding:30px 24px 80px}.end p{width:75vw}footer{padding:30px 24px;gap:20px;flex-wrap:wrap}}
+</style>
+<style id="site-nav-style">
+.site-menu-overlay{position:fixed;inset:0;background:#171714;color:#f2eee5;z-index:9999;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s ease;padding:34px 5vw 38px;display:flex;flex-direction:column}
+.site-menu-overlay.open{opacity:1;visibility:visible}
+.site-menu-top{display:flex;justify-content:space-between;align-items:center}
+.site-menu-close{border:0;background:transparent;color:inherit;font:400 10px "DM Sans",sans-serif;letter-spacing:.18em;text-transform:uppercase;cursor:pointer}
+.site-menu-links{margin:auto 0;display:flex;flex-direction:column;align-items:flex-start}
+.site-menu-links a{font:400 clamp(48px,7vw,108px)/.82 "Instrument Serif",Georgia,serif;letter-spacing:-.045em;color:inherit;text-decoration:none}
+.site-menu-links a:hover{font-style:italic;opacity:1}
+.site-menu-bottom{display:flex;justify-content:space-between;gap:25px;align-items:end;font:400 9px "DM Sans",sans-serif;letter-spacing:.16em;text-transform:uppercase}
+.site-menu-bottom a{color:inherit}
+@media(max-width:760px){.site-menu-overlay{padding:28px 24px}.site-menu-links a{font-size:16vw}.site-menu-bottom{flex-wrap:wrap}}
+</style>
+
+
+<style id="responsive-balance-v7">
+/* Responsive balance pass — content/design baseline remains V6 */
+html{scroll-behavior:smooth}
+img{max-width:100%}
+
+/* Large desktop: prevent compositions from becoming excessively stretched */
+@media (min-width:1440px){
+  main>section, footer, header{max-width:1800px;margin-left:auto;margin-right:auto}
+}
+
+/* Tablet / compact desktop */
+@media (max-width:1100px){
+  section{padding-left:5vw!important;padding-right:5vw!important}
+  header{padding-left:5vw!important;padding-right:5vw!important}
+  .hero{min-height:88vh}
+  .hero h1{font-size:clamp(92px,15vw,180px)!important}
+  .recording-grid,.about-grid,.project-grid,.press-grid{gap:5vw!important}
+  .site-menu-links a{font-size:clamp(54px,9vw,90px)}
+}
+
+/* Mobile */
+@media (max-width:760px){
+  body{overflow-x:hidden}
+  header{padding:22px 22px!important}
+  section{padding-left:22px!important;padding-right:22px!important}
+  .hero{min-height:auto!important;padding-top:110px!important;padding-bottom:72px!important}
+  .hero h1{font-size:clamp(72px,23vw,118px)!important;line-height:.78!important}
+  .hero .portrait, .hero img{max-height:64vh}
+  h2{overflow-wrap:normal}
+  p{max-width:100%}
+  .site-menu-overlay{padding:24px 22px 28px}
+  .site-menu-links{gap:2px}
+  .site-menu-links a{font-size:15.5vw;line-height:.88}
+  .site-menu-bottom{font-size:8px;line-height:1.5}
+  .footer-row{gap:24px!important;align-items:flex-start!important}
+}
+
+/* Small phones */
+@media (max-width:430px){
+  header{padding:19px 18px!important}
+  section{padding-left:18px!important;padding-right:18px!important}
+  .hero{padding-top:96px!important}
+  .site-menu-overlay{padding-left:18px;padding-right:18px}
+  .site-menu-links a{font-size:16vw}
+}
+
+/* Touch targets */
+@media (pointer:coarse){
+  a,button{min-height:40px}
+  .site-menu-links a{min-height:0}
+}
+</style>
+
+
+<style id="watch-responsive-v7">
+@media(max-width:760px){
+  .video-grid,.secondary-grid{grid-template-columns:1fr!important;gap:48px!important}
+  iframe{width:100%!important}
+}
+</style>
+
+</head><body>
+<header><a class="id" href="../index.html">Ham Chan / Pianist</a><button class="menu">Menu +</button></header>
+<section class="intro"><span class="eyebrow">Performances / selected</span><div><h1>Watch</h1><p>Selected performances</p></div></section>
+<section class="feature">
+<a class="screen" href="https://www.youtube.com/watch?v=TIttpF5cGrM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/TIttpF5cGrM/maxresdefault.jpg" alt="Ham Chan performing Schumann Kreisleriana"><span class="play">Play</span></a>
+<div class="caption"><span class="composer">Robert Schumann</span><span class="work">Kreisleriana, Op. 16</span></div>
+</section>
+<section class="more"><div class="more-head"><span class="eyebrow">More performances</span><span class="eyebrow">02 — 03</span></div>
+<div class="video-row"><a class="thumb" href="https://www.youtube.com/watch?v=uwO5KyDIPI4" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/uwO5KyDIPI4/maxresdefault.jpg" alt="Ham Chan performing Prokofiev"></a><div class="info"><div class="num">02 / Sergei Prokofiev</div><h2>Piano Sonata No. 8<br><i>in B-flat major, Op. 84</i></h2><a class="watch" href="https://www.youtube.com/watch?v=uwO5KyDIPI4" target="_blank" rel="noopener">Watch performance ↗</a></div></div>
+<div class="video-row"><a class="thumb" href="https://www.youtube.com/watch?v=GMWW2D7l4Zo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/GMWW2D7l4Zo/maxresdefault.jpg" alt="Ham Chan performing Chopin"></a><div class="info"><div class="num">03 / Frédéric Chopin</div><h2>Ballade No. 1<br><i>in G minor, Op. 23</i></h2><a class="watch" href="https://www.youtube.com/watch?v=GMWW2D7l4Zo" target="_blank" rel="noopener">Watch performance ↗</a></div></div>
+</section>
+<footer><span>Ham Chan · Pianist</span><span>Watch</span><span>© 2026</span></footer>
+
+<div class="site-menu-overlay" id="siteMenu" aria-hidden="true">
+  <div class="site-menu-top"><span class="id">Ham Chan / Pianist</span><button class="site-menu-close" type="button">Close ×</button></div>
+  <nav class="site-menu-links" aria-label="Main navigation">
+    <a href="../index.html">Home</a><a href="../about/index.html">About</a><a href="../recordings/index.html">Recordings</a>
+    <a href="../watch/index.html">Watch</a><a href="../concerts/index.html">Concerts</a><a href="../press/index.html">Press</a><a href="../contact/index.html">Contact</a>
+  </nav>
+  <div class="site-menu-bottom">
+    <a href="https://www.instagram.com/hamchanpianist/" target="_blank" rel="noopener">Instagram ↗</a>
+    <span>Ham Chan · Pianist</span>
+  </div>
+</div>
+<script>
+(()=>{const o=document.getElementById('siteMenu');if(!o)return;
+document.querySelectorAll('.menu').forEach(b=>b.addEventListener('click',()=>{o.classList.add('open');o.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}));
+o.querySelector('.site-menu-close').addEventListener('click',()=>{o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''}});
+})();
+</script>
+
+</body></html>
