@@ -4,6 +4,17 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Recordings by pianist Ham Chan, including Masks under the Mask, his two-disc exploration of Robert Schumann.">
 <title>Recordings — Ham Chan, Pianist</title>
+<link rel="canonical" href="https://www.hamchanpianist.com/recordings">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ham Chan — Pianist">
+<meta property="og:title" content="Recordings — Ham Chan, Pianist">
+<meta property="og:description" content="Recordings by pianist Ham Chan, including Masks under the Mask, his two-disc exploration of Robert Schumann.">
+<meta property="og:url" content="https://www.hamchanpianist.com/recordings">
+<meta property="og:image" content="https://www.hamchanpianist.com/assets/ham-chan-home.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Recordings — Ham Chan, Pianist">
+<meta name="twitter:description" content="Recordings by pianist Ham Chan, including Masks under the Mask, his two-disc exploration of Robert Schumann.">
+<meta name="twitter:image" content="https://www.hamchanpianist.com/assets/ham-chan-home.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
@@ -99,7 +110,7 @@ img{max-width:100%}
 
 </head>
 <body>
-<header><a class="id" href="../index.html">Ham Chan / Pianist</a><button class="menu">Menu +</button></header>
+<header><a class="id" href="../index.html">Ham Chan / Pianist</a><button class="menu" type="button" aria-label="Open site menu" aria-controls="siteMenu" aria-expanded="false">Menu +</button></header>
 <main>
 <section class="hero">
 <div class="hero-copy"><div class="eyebrow">Recording / 2025</div><h1>Masks<br><i>under</i> the<br>Mask</h1><div class="meta">Robert Schumann<br>Ham Chan, piano<br>Centaur Records</div><a class="listen" href="https://open.spotify.com/album/56E2e8F6epRvpA0Qd7uSxx" target="_blank" rel="noopener">Listen on Spotify ↗</a></div>
@@ -129,7 +140,7 @@ img{max-width:100%}
 <footer><span>Ham Chan · Pianist</span><span>Recordings</span><span>© 2026</span></footer>
 
 <div class="site-menu-overlay" id="siteMenu" aria-hidden="true">
-  <div class="site-menu-top"><span class="id">Ham Chan / Pianist</span><button class="site-menu-close" type="button">Close ×</button></div>
+  <div class="site-menu-top"><span class="id">Ham Chan / Pianist</span><button class="site-menu-close" type="button" aria-label="Close site menu">Close ×</button></div>
   <nav class="site-menu-links" aria-label="Main navigation">
     <a href="../index.html">Home</a><a href="../about/index.html">About</a><a href="../recordings/index.html">Recordings</a>
     <a href="../watch/index.html">Watch</a><a href="../concerts/index.html">Concerts</a><a href="../press/index.html">Press</a><a href="../contact/index.html">Contact</a>
@@ -141,9 +152,9 @@ img{max-width:100%}
 </div>
 <script>
 (()=>{const o=document.getElementById('siteMenu');if(!o)return;
-document.querySelectorAll('.menu').forEach(b=>b.addEventListener('click',()=>{o.classList.add('open');o.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}));
-o.querySelector('.site-menu-close').addEventListener('click',()=>{o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''}});
+document.querySelectorAll('.menu').forEach(b=>b.addEventListener('click',()=>{o.classList.add('open');o.setAttribute('aria-hidden','false');document.querySelectorAll('.menu').forEach(x=>x.setAttribute('aria-expanded','true'));document.body.style.overflow='hidden'}));
+o.querySelector('.site-menu-close').addEventListener('click',()=>{o.classList.remove('open');o.setAttribute('aria-hidden','true');document.querySelectorAll('.menu').forEach(x=>x.setAttribute('aria-expanded','false'));document.body.style.overflow=''});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){o.classList.remove('open');o.setAttribute('aria-hidden','true');document.querySelectorAll('.menu').forEach(x=>x.setAttribute('aria-expanded','false'));document.body.style.overflow=''}});
 })();
 </script>
 
