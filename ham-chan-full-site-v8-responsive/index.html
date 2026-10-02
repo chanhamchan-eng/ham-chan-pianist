@@ -4,6 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ham Chan — Pianist</title>
+<link rel="canonical" href="https://www.hamchanpianist.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ham Chan — Pianist">
+<meta property="og:title" content="Ham Chan — Pianist">
+<meta property="og:description" content="Official website of Hong Kong pianist Ham Chan: performances, recordings, concerts, press, artistic projects and biography.">
+<meta property="og:url" content="https://www.hamchanpianist.com/">
+<meta property="og:image" content="https://www.hamchanpianist.com/assets/ham-chan-home.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ham Chan — Pianist">
+<meta name="twitter:description" content="Official website of Hong Kong pianist Ham Chan: performances, recordings, concerts, press, artistic projects and biography.">
+<meta name="twitter:image" content="https://www.hamchanpianist.com/assets/ham-chan-home.jpg">
 <meta name="description" content="Official website of Hong Kong pianist Ham Chan: performances, recordings, concerts, press, artistic projects and biography.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -239,7 +250,7 @@ img{max-width:100%}
 
 </head>
 <body>
-<header><button class="menu">MENU +</button></header>
+<header><button class="menu" type="button" aria-label="Open site menu" aria-controls="siteMenu" aria-expanded="false">Menu +</button></header>
 <main id="top">
 <section class="hero">
   <div class="hero-name"><span class="given">Ham</span><span class="family">Chan</span></div>
@@ -321,7 +332,7 @@ img{max-width:100%}
 </footer>
 
 <div class="site-menu-overlay" id="siteMenu" aria-hidden="true">
-  <div class="site-menu-top"><span class="id">Ham Chan / Pianist</span><button class="site-menu-close" type="button">Close ×</button></div>
+  <div class="site-menu-top"><span class="id">Ham Chan / Pianist</span><button class="site-menu-close" type="button" aria-label="Close site menu">Close ×</button></div>
   <nav class="site-menu-links" aria-label="Main navigation">
     <a href="index.html">Home</a><a href="about/index.html">About</a><a href="recordings/index.html">Recordings</a>
     <a href="watch/index.html">Watch</a><a href="concerts/index.html">Concerts</a><a href="press/index.html">Press</a><a href="contact/index.html">Contact</a>
@@ -333,9 +344,9 @@ img{max-width:100%}
 </div>
 <script>
 (()=>{const o=document.getElementById('siteMenu');if(!o)return;
-document.querySelectorAll('.menu').forEach(b=>b.addEventListener('click',()=>{o.classList.add('open');o.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}));
-o.querySelector('.site-menu-close').addEventListener('click',()=>{o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''}});
+document.querySelectorAll('.menu').forEach(b=>b.addEventListener('click',()=>{o.classList.add('open');o.setAttribute('aria-hidden','false');document.querySelectorAll('.menu').forEach(x=>x.setAttribute('aria-expanded','true'));document.body.style.overflow='hidden'}));
+o.querySelector('.site-menu-close').addEventListener('click',()=>{o.classList.remove('open');o.setAttribute('aria-hidden','true');document.querySelectorAll('.menu').forEach(x=>x.setAttribute('aria-expanded','false'));document.body.style.overflow=''});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){o.classList.remove('open');o.setAttribute('aria-hidden','true');document.querySelectorAll('.menu').forEach(x=>x.setAttribute('aria-expanded','false'));document.body.style.overflow=''}});
 })();
 </script>
 
