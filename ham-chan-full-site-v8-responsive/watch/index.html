@@ -2,6 +2,17 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Selected performances by pianist Ham Chan, including music by Schumann, Prokofiev and Chopin.">
 <title>Watch — Ham Chan, Pianist</title>
+<link rel="canonical" href="https://www.hamchanpianist.com/watch">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ham Chan — Pianist">
+<meta property="og:title" content="Watch — Ham Chan, Pianist">
+<meta property="og:description" content="Selected performances by pianist Ham Chan, including music by Schumann, Prokofiev and Chopin.">
+<meta property="og:url" content="https://www.hamchanpianist.com/watch">
+<meta property="og:image" content="https://www.hamchanpianist.com/assets/ham-chan-home.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Watch — Ham Chan, Pianist">
+<meta name="twitter:description" content="Selected performances by pianist Ham Chan, including music by Schumann, Prokofiev and Chopin.">
+<meta name="twitter:image" content="https://www.hamchanpianist.com/assets/ham-chan-home.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
@@ -92,7 +103,7 @@ img{max-width:100%}
 </style>
 
 </head><body>
-<header><a class="id" href="../index.html">Ham Chan / Pianist</a><button class="menu">Menu +</button></header>
+<header><a class="id" href="../index.html">Ham Chan / Pianist</a><button class="menu" type="button" aria-label="Open site menu" aria-controls="siteMenu" aria-expanded="false">Menu +</button></header>
 <section class="intro"><span class="eyebrow">Performances / selected</span><div><h1>Watch</h1><p>Selected performances</p></div></section>
 <section class="feature">
 <a class="screen" href="https://www.youtube.com/watch?v=TIttpF5cGrM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/TIttpF5cGrM/maxresdefault.jpg" alt="Ham Chan performing Schumann Kreisleriana"><span class="play">Play</span></a>
@@ -105,7 +116,7 @@ img{max-width:100%}
 <footer><span>Ham Chan · Pianist</span><span>Watch</span><span>© 2026</span></footer>
 
 <div class="site-menu-overlay" id="siteMenu" aria-hidden="true">
-  <div class="site-menu-top"><span class="id">Ham Chan / Pianist</span><button class="site-menu-close" type="button">Close ×</button></div>
+  <div class="site-menu-top"><span class="id">Ham Chan / Pianist</span><button class="site-menu-close" type="button" aria-label="Close site menu">Close ×</button></div>
   <nav class="site-menu-links" aria-label="Main navigation">
     <a href="../index.html">Home</a><a href="../about/index.html">About</a><a href="../recordings/index.html">Recordings</a>
     <a href="../watch/index.html">Watch</a><a href="../concerts/index.html">Concerts</a><a href="../press/index.html">Press</a><a href="../contact/index.html">Contact</a>
@@ -117,9 +128,9 @@ img{max-width:100%}
 </div>
 <script>
 (()=>{const o=document.getElementById('siteMenu');if(!o)return;
-document.querySelectorAll('.menu').forEach(b=>b.addEventListener('click',()=>{o.classList.add('open');o.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}));
-o.querySelector('.site-menu-close').addEventListener('click',()=>{o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){o.classList.remove('open');o.setAttribute('aria-hidden','true');document.body.style.overflow=''}});
+document.querySelectorAll('.menu').forEach(b=>b.addEventListener('click',()=>{o.classList.add('open');o.setAttribute('aria-hidden','false');document.querySelectorAll('.menu').forEach(x=>x.setAttribute('aria-expanded','true'));document.body.style.overflow='hidden'}));
+o.querySelector('.site-menu-close').addEventListener('click',()=>{o.classList.remove('open');o.setAttribute('aria-hidden','true');document.querySelectorAll('.menu').forEach(x=>x.setAttribute('aria-expanded','false'));document.body.style.overflow=''});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){o.classList.remove('open');o.setAttribute('aria-hidden','true');document.querySelectorAll('.menu').forEach(x=>x.setAttribute('aria-expanded','false'));document.body.style.overflow=''}});
 })();
 </script>
 
